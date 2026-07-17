@@ -1,0 +1,5 @@
+==Bitacora System - Starting==
+Registro automatizado de eventos. 
+[10:01 AM], EVENT: Startint conection
+[10:15 AM], EVENT: Main User start program
+[10:45 AM], EVENT: Main User End program
