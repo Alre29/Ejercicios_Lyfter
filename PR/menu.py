@@ -20,7 +20,6 @@ def get_student_info():
     english_grade = ask_number("english")
     social_studies_grade = ask_number("social_studies")
     science_grade = ask_number("science")
-    print('retornado')
     return {
         "name": name,
         "section": section,
