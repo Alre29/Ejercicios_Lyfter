@@ -41,4 +41,3 @@ def show_total_average(students_list):
     total_average= total_sum/len(students_list)
     print(f"The class average is {round(total_average,2)}") 
 
-    print('red flag')

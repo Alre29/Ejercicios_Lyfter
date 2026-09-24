@@ -7,7 +7,7 @@ class Circle:
         
         return 3.1416 * (self.radius**2)
 
-my_circle = circle(5)
+my_circle = Circle(5)
 print(my_circle.get_area())
 
     

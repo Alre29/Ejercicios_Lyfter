@@ -16,7 +16,7 @@ class Bus:
             self.passengers.append(person)
             print(f'The person with ID {person.id_person} is in the bus now')
         else:
-            print(f'The bus is full. The person with ID{person.id.person} cannot  get in') 
+            print(f'The bus is full. The person with ID{person.id_person} cannot  get in') 
 
     def get_out_the_bus(self, person):
         if person in self.passengers:
