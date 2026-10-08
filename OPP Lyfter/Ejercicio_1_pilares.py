@@ -1,14 +1,13 @@
 class BankAccount:
-    def __init__(self, balance, ):
+    def __init__(self, balance ):
         self.balance = balance
 
     def deposit_money(self, amount):
         self.balance += amount
-        pass
-
+        
     def withdraw_money(self, amount):
         self.balance -= amount
-        pass
+        
 
 class SavingsAccount(BankAccount):
 
@@ -26,14 +25,14 @@ class SavingsAccount(BankAccount):
             super().withdraw_money(amount)
 
         else:
-            raise ValueError("Fondos insuficientes")
+            raise ValueError(f"Fondos insuficientes: el saldo no puede ser menor a ${self.min_balance}")
 
 
-my_saving_account = SavingsAccount(min_balance=100, balance= 200)
+my_saving_account = SavingsAccount(min_balance=100, balance= 350)
 
 print(f'Initial Balance ${my_saving_account.balance} minimum balance ${my_saving_account.min_balance}')
 
-my_saving_account.withdraw_money(200)
+my_saving_account.withdraw_money(100)
 print(f'Balance after withdraw: ${my_saving_account.balance}')
 
 try:

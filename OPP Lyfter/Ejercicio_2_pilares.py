@@ -31,7 +31,7 @@ class Square(Shape):
         return self.side * 4
 
     def calculate_area(self):
-        return self.side * 2
+        return self.side ** 2
     
 class Rectangle(Shape):
 
